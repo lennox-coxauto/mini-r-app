@@ -1,11 +1,10 @@
 import React from 'react';
 import './contentScreen.css';
-import { logSomething } from '../lib/script';
+import { log } from '../lib/script';
 
 
 
-const result = logSomething();
-console.log(result)
+log("hello world")
 
 export default function Content() {
 
