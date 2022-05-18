@@ -2,16 +2,18 @@ import React from 'react';
 
 // inline-styling
 const customHeaderStyle = {
-  backgroundColor: 'black',
-  margin: '20px',
+  backgroundColor: 'rgb(41,41,41, .9)',
   height: '80px',
-  padding: '16px 32px',
-  boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.3)'
+  width: '100%',
+  position: 'relative',
+  top: '0px'
 }
+
 const customH1Style = {
   color: '#fff',
   fontFamily: 'San-serif',
-  fontWeight: '200'
+  fontWeight: '200',
+  paddingTop: '14px'
 }
 
 
