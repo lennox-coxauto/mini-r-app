@@ -61,8 +61,12 @@ export default function Content() {
 
 
 
-  const increment = () => { incrementCounter(clicks + 1) }
-  const decrement = () => { incrementCounter(clicks - 1) }
+  const increment = () => { incrementCounter(clicks + 1) };
+  const decrement = () => { incrementCounter(clicks - 1) };
+
+  // Fix me up so that I can use the attributes on the button to control how much to increment by
+  const handleClick = () => { 
+  };
 
   
   return (
@@ -73,6 +77,22 @@ export default function Content() {
         <div className='contentScreen-clickButtons'>
             <button className='contentScreenButton' title='Increment Counter' onClick={increment}><span className='contentScreenButtonText'><i>IncrementCounter<br /></i>{clicks}</span></button> &nbsp;
             <button className='contentScreenButton' title='Decrement Counter' onClick={decrement}><span className='contentScreenButtonText'><i>decrementCounter<br /></i>{clicks}</span></button>
+            
+            <button 
+              className='contentScreenButton' 
+              title='Increment Counter'
+              data-increment="2"
+              onClick={handleClick}>
+                 <i>Increment by 2</i><br /> {clicks}
+            </button>
+
+            <button 
+              className='contentScreenButton' 
+              title='Increment Counter'
+              data-increment="-2"
+              onClick={handleClick}>
+                 <i>Decrement by 2</i><br /> {clicks}
+            </button>
         </div>
     </div>
   )
